@@ -1,0 +1,83 @@
+# ITE-260
+Check : skill building 2
+Coding Time: Open your code editors like Notepad++, Sublime, or any available IDE.
+1. Using the if-else statement, create a program that will ask for a number, your program
+must tell if the number entered by the user is “POSITIVE”, or “NEGATIVE”.
+2. Using the if-else statement create a program that will ask the 5 grades for 5 different subjects then get the average grade base on that grade print if the grade they have is  greater than 85 print with highest honor, 80 higher with honor, 75 above   pass ,and 75 below fail
+example :
+output : Jimuel average: 74 fail
+3. Create a program that will ask the user for their username and password if the entered credentials was correct print login 
+create a variable that holds a static value for username and password .
+#1
+num= int(input("enter your number:" ))
+if num >= 0:
+    print("POSITIVE")
+else:
+    print("NEGATIVE")
+
+OUTPUT
+>
+enter your number: -4
+negative
+>
+#2
+name= input("student Name: ")
+sub1= int(input("enter grade in English:"))
+sub2= int(input("enter grade in Math:"))
+sub3= int(input("enter grade in Science:"))
+sub4= int(input("enter grade in Filipino:"))
+sub5= int(input("enter grade in MAPEH:"))
+
+sum=(sub1+sub2+sub3+sub4+sub5)/5
+
+print("Average: ",sum)
+
+if sum >= 85:
+ print("student Name:",name,"Average:",sum, "With Highest Honors")
+elif sum >= 80:
+    print("student Name:",name,"Average:",sum,"With High Honors")
+elif sum >= 75:
+    print("student Name:",name,"Average:",sum,"passed")
+else:
+    print("student Name:",name,"Average:",sum,"failed")
+ouput:
+>
+student Name: John Mark
+>
+enter grade in English:88
+>
+enter grade in Math:93
+>
+enter grade in Science:89
+>
+enter grade in Filipino:87
+>
+enter grade in MAPEH:93
+Average:  90.0
+student Name: John Mark Average:  90.0 With Highest Honors
+
+#3
+userName = input("enter your username: ")
+passW = input("enter your password: ")
+
+user= "John"
+passwd = "12345"
+
+if userName == user and passW == passwd:
+    print("you are in!")
+elif userName != user and passW != passwd:
+    print("invalid login")
+elif  userName != user :
+    print("incorrect username")
+elif passW != passwd :
+    print("incorrect password")
+
+output
+>
+enter your username: John
+>
+enter your password: 12345
+you are in
+
+
+
