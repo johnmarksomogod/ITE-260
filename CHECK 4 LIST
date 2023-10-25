@@ -1,0 +1,41 @@
+# ITE-260
+Create an array of car brands with 5 values and use append to  add 3 another value
+
+Create an array of motor brands with 5 values and use insert into index 3 to add another value then use a del function to delete the last index of the array
+
+Create an array of fruit types with 5 values and change the existing value on index 4
+
+Create an array of animals with 5 values and use the remove function to remove one item on the list
+
+ANSWER:
+#1.
+car_Brands = ["BMW","Toyota","Ford","Tesla","Jeep"]
+car_Brands.append("honda")
+car_Brands.append("Audi")
+car_Brands.append("Chervolet")
+print(car_Brands)
+
+['BMW', 'Toyota', 'Ford', 'Tesla', 'Jeep', 'honda', 'Audi', 'Chervolet']
+
+#2.
+motor_Brands = ["Honda","Suzuki","Ducati","Yamaha","KTM"]
+motor_Brands.insert(3,"Vespa")
+motor_Brands.pop(5)
+print(motor_Brands)
+
+['Honda', 'Suzuki', 'Ducati', 'Vespa', 'Yamaha']
+
+#3.
+fruit = ["orange","apple","grapes","mango","banana"]
+fruit[4]="watermelon"
+print(fruit)
+
+['orange', 'apple', 'grapes', 'mango', 'watermelon']
+
+
+#4.
+animals = ["cat","dog","rabbit","bird","fish"]
+animals.remove("bird")
+print(animals)
+
+['cat', 'dog', 'rabbit', 'fish']
