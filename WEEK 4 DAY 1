@@ -1,0 +1,130 @@
+# ITE-260
+Check: Skill-building Activities Code Evaluation while loop
+Our ouput was written and submitted to you sir.
+
+CHECK SKILL BUILDING ACTIVITY :Coding Time while loop
+1. Create a program that will display 10 to 1 using a while loop.
+
+2. Create a program that accepts 5 integers then computes for the sum..
+3.Objective: Create a while loop that counts from 1 to a specified number and prints each number.
+Instructions:Ask the user to input a number.Use a while loop to count from 1 to the specified number.Inside the loop, print each number.Continue counting and printing until you reach the specified number.
+
+4. Objective: Use a while loop to print a message a specified number of times.
+Instructions:Ask the user to input a message and the number of times they want it to be printed.Use a while loop to print the message the specified number of times.Increment a counter variable in each iteration to keep track of how many times the message has been printed.
+Exit the loop when the counter reaches the specified number.
+5.
+Objective: Create a simple word guessing game using a while loop.
+Instructions:Choose a secret word and store it in a variable.Ask the player to guess the secret word.Use a while loop to repeatedly ask the player for their guess until they guess the correct word.Inside the loop, compare the player's guess to the secret word.
+If the guess is incorrect, print a message like "Try again."
+If the guess is correct, print a message like "Congratulations! You guessed the secret word!" and exit the loop.
+
+OUTPUT
+1. Create a program that will display 10 to 1 using a while loop.
+b= 10
+while b >=1:
+    print(b)
+    b-=1
+
+output:
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+
+2. Create a program that accepts 5 integers then computes for the sum.
+integers=input("enter 5 numbers:")
+sum= 0
+ctr= 1
+while (ctr<=5):
+    inum= int(input(""))
+    sum+=inum
+    ctr+=1
+print("sum:", sum)
+
+ouput:
+enter 5 numbers:
+>
+3
+>
+5
+>
+3
+>
+7
+>
+2
+sum: 20
+
+3.
+Objective: Create a while loop that counts from 1 to a specified number and prints each number.
+Instructions:Ask the user to input a number.Use a while loop to count from 1 to the specified number.Inside the loop, print each number.Continue counting and printing until you reach the specified number.
+
+specified_number= int(input("Enter a number:"))
+i=1
+while i <=specified_number:
+    print(i)
+    i+=1
+
+output:
+>
+Enter a number:6
+1
+2
+3
+4
+5
+6
+
+
+4. 
+Objective: Use a while loop to print a message a specified number of times.
+Instructions:Ask the user to input a message and the number of times they want it to be printed.Use a while loop to print the message the specified number of times.Increment a counter variable in each iteration to keep track of how many times the message has been printed.
+Exit the loop when the counter reaches the specified number
+
+message=input("Enter a message:")
+number_of_prints=int(input("Enter the number of print:"))
+i=0
+while i< number_of_prints:
+    print(message)
+    i+=1
+
+ouput:
+>
+Enter a message: Happy teacher's Day!
+>
+Enter the number of print:5
+ Happy teacher's Day!
+ Happy teacher's Day!
+ Happy teacher's Day!
+ Happy teacher's Day!
+ Happy teacher's Day!
+
+5.
+Objective: Create a simple word guessing game using a while loop.
+Instructions:Choose a secret word and store it in a variable.Ask the player to guess the secret word.Use a while loop to repeatedly ask the player for their guess until they guess the correct word.Inside the loop, compare the player's guess to the secret word.
+If the guess is incorrect, print a message like "Try again."
+If the guess is correct, print a message like "Congratulations! You guessed the secret word!" and exit the loop.
+
+secret_word="dog"
+
+while True:
+    guess=input("Guess the secret word:")
+    if guess != secret_word:
+        print("Try again.")
+        continue
+    else:
+        print("Congratulations! You guessed the secret word!")
+        break
+
+output:
+Guess the secret word:cat
+Try again.
+Guess the secret word:dog
+Congratulations! You guessed the secret word!
