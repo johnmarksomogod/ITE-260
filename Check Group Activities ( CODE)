@@ -1,0 +1,158 @@
+# ITE-260
+name = input("Enter name:")
+password = str(input("Register password:"))
+apassword = password
+attempts = 5
+
+while attempts >= 1:
+    epassword = str(input("Enter password:"))
+    if apassword != epassword:
+        print("Incorrect password")
+        attempts -= 1
+    else:
+        print("Login")
+
+        print("\nIdentification. Put your answers in capital letters.")
+        print("SAS 11")
+        print()
+        questions = {
+            "If a sequence contains an expression list, it is not evaluated first.":
+            "FALSE",
+            "if the else statement is used with a for loop, the else statement is executed when the loop has exhausted iterating the list.":
+            "TRUE",
+            "if the else statement is used with a while loop, the else statement is executed when the condition becomes true.":
+            "FALSE",
+            "An alternative way of iterating each item is by index offset into the sequence itself.":
+            "TRUE",
+            "Python programming language allows using a loop outside another loop.":
+            "FALSE",
+            "The syntax for a nested while loop statement in Python programming language is as follows Loop.":
+            "FALSE",
+            "A final note on loop nesting is that you can put any type of loop inside of any other type of loop.": "TRUE",
+            "An infinite loop is very useful in embedded systems.":
+            "TRUE",
+            "Range( start, stop) generated an even numbers starting from start to stop 11.":
+            "FALSE",
+            "Range n generates a set of whole numbers starting from 0 to (n-1).":
+            "TRUE"
+        }
+
+        correct = 0
+        incorrect = 0
+        for x in questions:
+            answer_key = questions[x]
+            print(x)
+            answer = input("Enter answer:")
+            if answer == answer_key:
+                print("Correct")
+                correct += 1
+            else:
+                print("Incorrect")
+        print(" ")
+        score_1 = correct
+        print("SCORE:", score_1, "/", str(10))
+        
+
+        print("\nIdentification. Put your answers in capital letters.")
+        print("SAS 12")
+        print()
+        questions = {
+            "Break statements in a loop alter the execution sequence.":
+            "FALSE",
+            "When execution exits a scope, all automatic objects created in that scope are destroyed.":
+            "TRUE",
+            "Control statement is used inside the loop to exit out of the loop.":
+            "FALSE",
+            "The continue statement allows you to bypass the current iteration of any loop.":
+            "TRUE",
+            "Pass statement is considered a operation statement.":
+            "FALSE",
+            "The pass statement is much like a comment.":
+            "TRUE",
+            "Break will exit only the outermost loop containing it.": "FALSE",
+            "Use the break statement to come out of the loop instantly.":
+            "TRUE",
+            "Continue statement is one of the control statements.":
+            "TRUE",
+            "Bypass is supported by python.":
+            "TRUE"
+            
+        }
+
+        correct = 0
+        incorrect = 0
+        for x in questions:
+            answer_key = questions[x]
+            print(x)
+            answer = input("Enter answer:")
+            if answer == answer_key:
+                print("Correct")
+                correct += 1
+            else:
+                print("Incorrect")
+        print(" ")
+        score_2 = correct 
+        print("SCORE:", score_2, "/", str(10))
+        
+      
+        print("\nIdentification. Put your answers in capital letters.")
+        print("SAS 13")
+        print()
+        questions = {
+            "In Python, a variety of operators can be used to perform operations on values and variables.":
+            "TRUE",
+            "In testing for Python programs, sometimes you may want to separate multiple conditions at the same time.":
+            "FALSE",
+            "The AND operator determines whether two criteria are False at the same time.":
+            "FALSE",
+            "If the both conditions are true, it returns True.":
+            "FALSE",
+            "The NOT operator is only valid for one condition.":
+            "TRUE",
+            "True becomes True and False becomes False.":
+            "FALSE",
+            "Python evaluates logical operators in the order they are listed when you mix them in an expression, which is known as operator precedence.": "TRUE",
+            "True when one or both of the conditions are met.":
+            "TRUE",
+            "Python has 2 logical operators.":
+            "FALSE",
+            "AND, OR and NOT are the three logical operators of python.":
+            "TRUE"
+        }
+
+        correct = 0
+        incorrect = 0
+        for x in questions:
+            answer_key = questions[x]
+            print(x)
+            answer = input("Enter answer:")
+            if answer == answer_key:
+                print("Correct")
+                correct += 1
+            else:
+                print("Incorrect")
+        print(" ")
+        score_3 = correct
+        print("SCORE:", score_3, "/",str(10))
+        
+        print()
+        total_score = (score_1 + score_2 + score_3)
+        print("TOTAL SCORE:", total_score)
+        
+        if total_score >= 15:
+          print("PASSED")
+        elif total_score >= 20:
+          print("GREAT SCORE")
+        elif total_score == 30:
+          print("PERFECT")
+        else:
+          print("FAILED")
+
+        print()
+        average_result = (score_1 + score_2 + score_3) /3
+        print("Average Result of the Three Scores:", average_result)
+        break
+
+        if attempts >= 5:
+         print("No more attempts")
+        exit()
