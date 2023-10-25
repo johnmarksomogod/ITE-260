@@ -1,0 +1,28 @@
+Check : pseudocode
+Skill-building Activity
+1. To check positive or negative
+Get number
+IF the number is greater than 0
+PRINT “Positive”
+ELSE
+PRINT “ Negative”
+ENDIF
+
+2. To check odd or even number
+Get n
+IF n is divisible by 2
+PRINT “Even”
+ELSE
+PRINT “Odd”
+ENDIF
+3.To check greatest of three numbers
+READ a,b,c
+IF a is greater than b, and a is greater than c
+PRINT “ a is greatest”
+IF b is greater than a, and b is greater than c
+PRINT “ b is greatest”
+IF c is greater than a, and c is greater than b
+PRINT “c is greatest”
+ELSE
+PRINT “yay”
+ENDIF
