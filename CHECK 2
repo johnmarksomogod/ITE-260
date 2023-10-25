@@ -1,0 +1,86 @@
+# ITE-260
+
+1create a program for the  user where they  can input there name and age and print name and age together 
+
+2Create a program where a user can input there fname , lname , gender phoneNumber ,location . user casting to print it in one line
+
+3. Create a program where user input add two numbers and add them then create a result variable . for the output should look like this
+1 + 1 = 2
+
+4create a program to input and calculate grade average 
+ assuming your a teacher and you need input a student name and  grade  with 4 subject to be calculated 
+use casting  to print the result for calculated grade with the student name
+
+ANSWER:
+#1.
+Fullname= input("enter your Fullname:")
+age= int(input("enter your age:"))
+print(Fullname, age)
+
+>
+enter your Fullname: John Mark Calderon Somogod
+>
+enter your age:20
+ John Mark Calderon Somogod 20
+
+
+#2.
+Fname= input("enter your Fname:")
+Iname= input("enter your Iname:")
+gender= input("enter your gender:")
+phoneNumber= int(input(" enter your phoneNumber:"))
+location= input("enter your location:")
+print( Fname,Iname,gender,phoneNumber,location)
+
+>
+enter your Fname: Somogod
+>
+enter your Iname:Calderon
+>
+enter your gender:male
+>
+ enter your phoneNumber:09700393402
+>
+enter your location: Capitol site, Cebu City
+ Somogod Calderon male 9700393402  Capitol site, Cebu City
+
+
+#3.
+x=int(input("first number:"))
+y=int(input("second number:"))
+sum= x+y
+print (x, "+", y, "=" , sum)
+
+>
+first number:2
+>
+second number:2
+2 + 2 = 4
+
+>
+first number:2
+>
+second number:2
+2 + 2 = 4
+
+#4.
+StudentName = input("enter student name:")
+Math = int(input(" Math Enter Grade:"))
+Science = int(input("Science Enter Grade:"))
+Filipino = int(input("Filipino Enter Grade:"))
+English = int(input(" English Enter Grade:"))
+
+ave = (Math+Science+Filipino+English)/4
+print("Student:", StudentName,"Average Grade:", ave)
+
+>
+enter student name: John Mark Somogod
+>
+ Math Enter Grade:93
+>
+Science Enter Grade:92
+>
+Filipino Enter Grade:89
+>
+ English Enter Grade:94
+Student:  John Mark Somogod Average Grade: 92.0
